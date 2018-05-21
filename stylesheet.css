@@ -29,9 +29,13 @@ font-family:Modern Antiqua;
     padding:20px;
 }
 
-img{
-    text-align:center;
+.rp{
+    width:360px;
 }
+
+/*img{*/
+/*    text-align:center;*/
+/*}*/
 
 .nav{
     display:flex;
