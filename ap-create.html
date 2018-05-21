@@ -4,6 +4,7 @@
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <link href="stylesheet.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
         <script type="text/javascript" src="script.js"></script>
         <title> Capstone Website </title>
        
@@ -11,7 +12,7 @@
     <body>
         <div class="page">
             <div class="content">
-                <h1 class="center">David</h1>
+                <h1 class="center">David's Site</h1>
                 <div class="nav">
                     <button id="menu"> <i class="material-icons">menu</i> </button>
                     <a class="nav-item" href="index.html">About Me</a>
@@ -20,9 +21,89 @@
                     <a class="nav-item" href="strengths.html">Strengths</a>
                     <a class="nav-item" href="reaserch.html">Reaserch</a>
                 </div>
-                <h3 class="center">Create Task</h3>
+                <h2 class="center">Create Task</h2>
+                <h3> <u>Writen Response:</u> </h3>
+                <p>
+                    <b>2C)</b>
+                    <p class="code">
+                    function game()
+                    {
+                        <br/>
+                      	createCanvas(400, 610);   
+                      	<br/>
+                      	scene();
+                      	<br/>
+                      	genMainCharacter();
+                      	<br/>
+                      	level = "One";
+                      	<br/>
+                      	score = 0;
+                      	<br/>
+                      	for (let i = 0; i < 3; i++)
+                         	{
+                          	<br/>
+                          	students[i]= createSprite(random(20,350),yPos,30,30);
+                            <br/>
+                            eighthGraders = new Group();
+                        	<br/>
+                        	eighthGraders.add(students[i]);
+                            }
+                    <br/>
+                    }
+                    </p>
+                    My main algorithm is the game() function. The purpose of this algorithm is to draw everything that is essential to the game from background to characters. When this code runs correctly, it will create a canvas, draws the background and borders on the left and right side of the canvas, draws the playable character and the top three sprites(obstacles), and it sets the score to zero and the level to level one. This decreases my program’s complexity by making all three of the sprites with one line of code instead of me having to write three separate line of code for every individual sprite. 
+                    <p class="code">
+                    for (let i = 0; i < 3; i++)
+                    <br/>
+                    {
+                          	<br/>
+                          	students[i]= createSprite(random(20,350),yPos,30,30);
+                            	<br/>
+                            	eighthGraders = new Group();
+                        		<br/>
+                        		eighthGraders.add(students[i]);
+                    <br/>
+                    }
+                    </p>
+                    This algorithm works with a for loop and the scene() function which are sub algorithm. The for loop gives the array students multiple values by making the value of the array i and in the loop it adds 1 to i everytime it runs. Also it checks if i is greater than three and if i is greater than three it will not run. 
+                    <p class="code">
+                    function scene()
+                    <br/>
+                    {
+                        <br/>
+                        leftWall = createSprite(0,0,20,1400);
+                        <br/>
+                        leftWall.immovable = true;
+                        <br/>
+                        rightWall = createSprite(400,0,20,1400);
+                        <br/>
+                        rightWall.immovable = true;
+                    <br/>
+                    }
+                    </p>
+                    The scene() function has the borders of the game so that the main character does not go off of the screen and so that the border does not move when the main character runs into it. They work together to draw the obstacles and characters needed to play the game, also to make the borders. If this program did not include this algorithm, it would not work at all because in this algorithm is included everything from the playable character to the background, so if this algorithm was not included it would just be a black screen.
+                    <br/>
+                    <b>2D)</b>
+                    <p class="code">
+                    function drawScore()
+                    <br/>
+                    {
+                        <br/>
+                        score=score+10;
+                        <br/>
+                        fill(255);
+                        <br/>
+                        textSize(20);
+                        <br/>
+                        text("score:"+score, 20, 20);
+                    <br/>
+                    }
+                    </p>
+                    An example of an abstraction in my program is the drawScore() function. This simplifies my program by instead of having all the mathematics that are need for the score in the draw() function it is now in the drawScore() function that I can later call in the draw function but instead of having all of this code in there it will now only be one line of code. I create this abstraction to avoid having a-lot of code in the draw() function which is where everything happens, and also so that the draw() function looks more neat and easier to access each individual part of my program. For example if you wanted to see the code I used for the score you would simple look for the function that says drawScore() instead of having to go through a-lot of that has no type of label saying it is the score code. If this abstraction weren’t present, then the draw() function would have 4 extra lines of code instead of having just one line of code, so it would look less neat.
+                    </p>
                 <div class="glitch-embed-wrap" style="height: 750px; width: 100%;">
                 <iframe src="https://glitch.com/embed/#!/embed/ap---create---task?path=hallway.js&previewSize=100" alt="ap---create---task on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
+                
                 </div>
             </div>
         </div>
