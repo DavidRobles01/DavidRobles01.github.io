@@ -13,8 +13,21 @@ font-family:Modern Antiqua;
     font-family:courier new;
 }
 
+.sp{
+    width:360px;
+    padding-left:180px;
+}
+
+.rp{
+    width:360px;
+}
+
 .links{
     text-decoration:none;
+}
+
+#dogs{
+    padding-left:180;
 }
 
 .page{
@@ -28,14 +41,6 @@ font-family:Modern Antiqua;
     text-align:left;
     padding:20px;
 }
-
-.rp{
-    width:360px;
-}
-
-/*img{*/
-/*    text-align:center;*/
-/*}*/
 
 .nav{
     display:flex;
